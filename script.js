@@ -3,7 +3,7 @@ $('#random').on('click',function(){
 window.open("https://en.wikipedia.org/wiki/Special:Random", '_blank');
 })
 $('#sumbit').on('click',function(){
-var wikiUrl = "http://en.wikipedia.org/w/api.php?action=opensearch&search="+$('#sent').val()+"&format=json&callback=wikiCallbackFunction";
+var wikiUrl = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+$('#sent').val()+"&format=json&callback=wikiCallbackFunction";
 
             $.ajax(wikiUrl, {
                 dataType: "jsonp",
